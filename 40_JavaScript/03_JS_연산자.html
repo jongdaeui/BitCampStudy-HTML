@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS 연산자</title>
+<script>
+    // 증감연산자 : ++, --
+    var num = 100;
+    document.write("num : " + num + "<br>");
+    
+    var result = ++num;
+    document.write("result : " + result + "<br>");
+    document.write("num : " + num + "<br>");
+    document.write("<hr>");
+    
+    num = 100;
+    document.write("num : " + num + "<br>");
+    
+    result = num++; // num 값 연산에 사용하고 그 후에 1 증가
+    document.write("result : " + result + "<br>");
+    document.write("num : " + num + "<br>");
+    document.write("<hr>");
+    
+    //=====================
+    // 부정연산자 : ! (not)
+    document.write("true : " + true + "<br>");
+    document.write("!true : " + !true + "<br>");
+    document.write("!false : " + !false + "<br>");
+    document.write("<hr>");
+    
+    //=======================
+    // 산술연산자 : +, -, *, /, %(나머지 연산)
+    var num1 = 100;
+    var num2 = 3;
+    document.write("num1 : " + num1 + ", num2 : " + num2 + "<br>");
+    document.write("num1 + num2 : " + (num1 + num2) + "<br>");
+    document.write("num1 - num2 : " + (num1 - num2) + "<br>");
+    document.write("num1 * num2 : " + (num1 * num2) + "<br>");
+    document.write("num1 / num2 : " + (num1 / num2) + "<br>");
+    document.write("num1 % num2 : " + (num1 % num2) + "<br>");
+    document.write("num1 ** num2 : " + (num1 ** num2) + "<br>");
+    document.write("<hr>");
+    
+    //========================
+    // 문자열 (숫자만 있는)
+    var str = "100"; // 문자열 (String)
+    str = str + 100; // 문자열 붙이기 연산 처리
+    document.write("str : " + str + " - " + typeof str + "<br>");
+    
+    str = "100";
+    // str = (str * 1) + 100; // 숫자형태 문자열 곱하기 1 연산 : 형변환
+    // str = Number(str) + 200;
+    str = parseInt(str) + 200
+    document.write("str : " + str + " - " + typeof str + "<br>");
+    
+    //==================================
+    // 대입연산자(복합) : =, +=, -=, *=, /=, %=
+    num1 = 100;
+    num2 = 3;
+    document.write("num1 : " + num1 + ", num2 : " + num2 + "<br>");
+    
+    var result = 100;
+    document.write("result : " + result + "<br>");
+    
+    result += num2;
+    document.write("result += : " + result + "<br>");
+    
+    result -= num2;
+    document.write("result -= : " + result + "<br>");
+    
+    result *= num2;
+    document.write("result *= : " + result + "<br>");
+    
+    result /= num2;
+    document.write("result /= : " + result + "<br>");
+    
+    result %= num2;
+    document.write("result %= : " + result + "<br>");
+    document.write("<hr>");
+    
+    //========================================
+    // 비교 연산자 : >, <, >=, <=, ==, !=, ===, !==
+    // == : 값이 일치시 true (!= :  값이 다르면 true)
+    // === : 값이 일치하고 (AND) 타입까지 일치시 true
+    // !== : 값 불일치 또는 (OR) 타입이 다를경우 true
+    
+    document.write("100 == 100 : " + (100 == 100) + "<br>");
+    document.write("100 == '100' : " + (100 == '100') + "<br>");
+    
+    document.write("100 != 100 : " + (100 != 100) + "<br>");
+    document.write("100 != '100' : " + (100 != '100') + "<br>");    
+    
+    document.write("100 === 100 : " + (100 === 100) + "<br>");
+    document.write("100 === '100' : " + (100 === '100') + "<br>");
+    
+    document.write("100 !== 100 : " + (100 !== 100) + "<br>");
+    document.write("100 !== '100' : " + (100 !== '100') + "<br>");
+</script>
+    
+    
+</head>
+<body>
+    
+    
+    
+</body>
+</html>

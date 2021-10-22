@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>구구단 2-9단</title>
+<style>
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid black; }
+    th {
+        background-color: #555; color: white;
+        width: 8%
+    }
+    td { text-align: center; }
+    td:hover { background-color: lightcoral; }
+    tr:nth-child(even) { background-color: #ccc; }
+</style>
+<script>
+    // (실습) 테이블 형태의 구구단 작성하기 (2~9단)
+    document.write("<table border>");
+    document.write("<thead>");
+    document.write("<tr>");
+    for (let i = 2; i <= 9; i++) {
+        document.write("<th>" + i + "단</th>");
+    }
+    document.write("</tr>");
+    document.write("</thead>");
+    
+    document.write("<tbody>");
+    for (let i = 1; i <= 9; i++) {
+        document.write("<tr>");
+        for (let k = 2; k <= 9; k++) {
+            document.write("<td>" + k + " * " + i + " = " + (k*i) + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</tbody>");
+    document.write("</table>");
+    
+    
+</script>
+</head>
+<body>
+    
+    
+</body>
+</html>
