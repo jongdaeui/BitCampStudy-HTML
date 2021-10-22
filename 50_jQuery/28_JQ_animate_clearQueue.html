@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>animate, clearQueue</title>
+    <!-- jQuery import 방식2(CDN 방식) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        // h1 태그를 우측ㅇ으로 300px 만큼, 3초동안 이동 후 되돌아 오기
+        $("#run").click(function(){
+            $("h1").animate({"margin-left": "300px"}, 3000)
+                    .animate({"margin-left": "0px"}, 3000);
+        });
+        
+        // stop 처리(한번)
+        $("#stop").click(function(){
+            $("h1").stop();
+        });
+        
+        // stop 2번 연속 처리
+        $("#stop-stop").click(function(){
+            $("h1").stop().stop();
+        });
+        
+        // stop 2번 연속 처리
+        $("#clearQueue").click(function(){
+            $("h1").clearQueue();
+        });
+        
+        // stop 2번 연속 처리
+        $("#clearQueueStop").click(function(){
+            $("h1").stop().clearQueue();
+        });
+        
+        // stop 2번 연속 처리
+        $("#stopClearQueue").click(function(){
+            $("h1").clearQueue().stop();
+        });
+        
+        $("#stopTrue").click(function(){
+            $("h1").stop(true);
+        });
+    });
+</script>
+    
+<style>
+    h1 { margin-left: 0px;}
+</style>
+</head>
+<body>
+    <button id="run">run</button>
+    <button id="stop">stop</button>
+    <button id="stop-stop">stop-stop</button>
+    <button id="clearQueue">clearQueue</button>
+    <button id="clearQueueStop">clearQueueStop</button>
+    <button id="stopClearQueue">stopClearQueue</button>
+    <button id="stopTrue">stopTrue</button>
+    <hr>
+    <h1>abcde</h1>
+    
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
